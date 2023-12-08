@@ -9,6 +9,11 @@ public class HelloWorld : MonoBehaviour
     [SerializeField] TextMeshProUGUI countT;
     [SerializeField] List<string> text_variables = new();
 
+    void Start() 
+    {
+        Debud.Log("Hello World!");
+    }
+
     [System.Obsolete]
     public void Click()
     {
